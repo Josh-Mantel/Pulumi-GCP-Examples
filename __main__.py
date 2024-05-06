@@ -39,3 +39,5 @@ bucket = storage.Bucket(
 
 # Export the DNS name of the bucket
 pulumi.export('bucket_name', bucket.url)
+pulumi.export('bucket_cors',bucket.cors)
+pulumi.export('bucket_ecryption',bucket.encryption)
